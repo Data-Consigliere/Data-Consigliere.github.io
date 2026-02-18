@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article>
+
+<h1>{{ .Title }}</h1>
+
+{{ if .TableOfContents }}
+<div class="toc">
+  <h3>Table of Contents</h3>
+  {{ .TableOfContents }}
+</div>
+{{ end }}
+
+<div class="post-meta">
+  {{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read
+  {{ with .Params.tags }} • {{ delimit . ", " }}{{ end }}
+</div>
+
+<div class="post-content">
+    {{ .Content }}
+  </div>
+
+</article>
+{{ end }}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Me on DataConsigliere</title>
+    <link>http://localhost:1313/dataconsigliere.github.io/tags/me/</link>
+    <description>Recent content in Me on DataConsigliere</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/dataconsigliere.github.io/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/dataconsigliere.github.io/about/</link>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dataconsigliere.github.io/about/</guid>
+      <description>&lt;p style=&#34;text-align:center;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/dataconsigliere.github.io/images/About.JPG&#34; alt=&#34;Profile&#34; style=&#34;max-width:220px; border-radius:6px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Over the years, my work has spanned data architecture, analytics strategy, business intelligence, and performance management. I’ve always been driven by a simple idea: &lt;strong&gt;clarity enables better decisions&lt;/strong&gt;. That principle has guided my entire career.&lt;/p&gt;
+&lt;p&gt;Today, I’m expanding that foundation into &lt;strong&gt;hands‑on AI Engineering&lt;/strong&gt;, deepening my expertise in Python, machine learning, deep learning, LLMs, and the Microsoft AI ecosystem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DataConsigliere&lt;/strong&gt; is my space to explore modern AI, Microsoft Fabric, Azure AI, and the craft of building intelligent systems with clarity and purpose.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

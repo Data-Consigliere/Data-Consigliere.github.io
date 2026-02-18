@@ -1,12 +1,17 @@
-baseURL: "https://dataconsigliere.github.io/"
+baseURL: "https://data-consigliere.github.io/dataconsigliere.github.io/"
+#baseURL: "https://dataconsigliere.github.io/"
 languageCode: "en-us"
 title: "DataConsigliere"
 theme: "PaperMod"
 publishDir: "docs"
 
 params:
-  defaultTheme: "light"        # force light mode
-  disableThemeToggle: true     # hide the dark/light switch
+  defaultTheme: "light"
+  disableThemeToggle: false
+
+  assets:
+    css:
+      - css/custom.css
 
   homeInfoParams:
     Title: "Hi, I'm José Bagina"
@@ -22,23 +27,26 @@ params:
     - name: email
       url: "mailto:data.consigliere@proton.me"
 
-
-  assets:
-    css:
-      - css/custom.css          # your custom styling
-
 menu:
   main:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
+    - identifier: start
+      name: Start Here
+      url: /start-here/
+      weight: 5
     - identifier: posts
       name: Posts
       url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
       weight: 20
 
 markup:
   goldmark:
     renderer:
-      unsafe: true              # allows HTML in Markdown (needed for your <img> block)
+      unsafe: true
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
