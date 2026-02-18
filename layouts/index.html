@@ -1,34 +1,47 @@
 {{ define "main" }}
 
-<div class="home-extra">
-  {{ .Content }}
-</div>
+  <!-- Content from content/_index.md -->
+  <div class="home-extra">
+    {{ .Content }}
+  </div>
 
-<div class="home-info">
-<h1>{{ .Site.Params.homeInfoParams.Title }}</h1>
-<p class="home-subtitle">
-  {{ .Site.Params.homeInfoParams.Content }}
-</p>
+  <!-- Intro block (homeInfoParams) -->
+  <div class="home-info">
+    <h1>{{ .Site.Params.homeInfoParams.Title }}</h1>
 
-<div class="social-icons">
-  {{ range .Site.Params.socialIcons }}
-    <a href="{{ .url }}" target="_blank" aria-label="{{ .name }}">
-      <i class="social-icon {{ .name }}"></i>
-    </a>
+    <p class="home-subtitle">
+      {{ .Site.Params.homeInfoParams.Content }}
+    </p>
+
+    <!-- Social icons -->
+    <div class="social-icons">
+      {{ range .Site.Params.socialIcons }}
+        <a href="{{ .url }}" target="_blank" aria-label="{{ .name }}">
+          <i class="social-icon {{ .name }}"></i>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+
+  <!-- Spacing before posts -->
+  <div class="home-spacing"></div>
+
+  <!-- Posts list -->
+  <h2>Posts</h2>
+
+  {{ $posts := (where .Site.RegularPages "Section" "posts") | sort "Date" "desc" }}
+
+  {{ if gt (len $posts) 0 }}
+    <ul>
+      {{ range $posts }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="post-meta"> — {{ .Date.Format "Jan 2, 2006" }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p>No posts yet.</p>
   {{ end }}
-</div>
-
-<div class="home-spacing"></div>
-
-<h2>Posts</h2>
-
-<ul>
-  {{ range (where .Site.RegularPages "Section" "posts") }}
-  <li>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    <span class="post-meta"> — {{ .Date.Format "Jan 2, 2006" }}</span>
-  </li>
-  {{ end }}
-</ul>
 
 {{ end }}

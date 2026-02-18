@@ -1,12 +1,21 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
 
-<ul>
-  {{ range .Pages }}
-  <li>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    <span class="post-meta"> — {{ .Date.Format "Jan 2, 2006" }}</span>
-  </li>
+  <h1>{{ .Title }}</h1>
+
+  <!-- Optional section description from _index.md -->
+  {{ if .Content }}
+    <div class="section-description">
+      {{ .Content }}
+    </div>
   {{ end }}
-</ul>
+
+  <ul>
+    {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="post-meta"> — {{ .Date.Format "Jan 2, 2006" }}</span>
+      </li>
+    {{ end }}
+  </ul>
+
 {{ end }}

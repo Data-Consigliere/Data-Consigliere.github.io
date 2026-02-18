@@ -2,9 +2,10 @@
    DataConsigliere – Signature Minimalist Look
    ---------------------------------------- */
 
-/* ------------------------------
+
+/* ==============================
    Global Typography & Layout
-   ------------------------------ */
+   ============================== */
 body {
     font-family: "Georgia", "Times New Roman", serif;
     font-size: 19px;
@@ -13,7 +14,7 @@ body {
     background: #ffffff;
     max-width: 760px;
     margin: 0 auto;
-    padding: 3rem 1rem 4rem 1rem; /* breathing room */
+    padding: 3rem 1rem 4rem 1rem;
 }
 
 /* Optional: adjust text column width */
@@ -21,9 +22,10 @@ body {
     max-width: 760px;
 }
 
-/* ------------------------------
+
+/* ==============================
    Headings
-   ------------------------------ */
+   ============================== */
 h1, h2, h3 {
     font-family: "Inter", "Segoe UI", sans-serif;
     font-weight: 600;
@@ -37,9 +39,10 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* ------------------------------
+
+/* ==============================
    Links
-   ------------------------------ */
+   ============================== */
 a {
     color: #005A9E;
     text-decoration: none;
@@ -51,9 +54,10 @@ a:hover {
     border-bottom-color: #003f73;
 }
 
-/* ------------------------------
+
+/* ==============================
    Paragraphs & Lists
-   ------------------------------ */
+   ============================== */
 p {
     margin: 1.4rem 0;
 }
@@ -62,9 +66,10 @@ ul, ol {
     margin: 1.2rem 0 1.2rem 1.5rem;
 }
 
-/* ------------------------------
+
+/* ==============================
    Images
-   ------------------------------ */
+   ============================== */
 img {
     max-width: 100%;
     border-radius: 6px;
@@ -76,27 +81,30 @@ img.hero {
     margin: 2rem auto;
 }
 
-/* ------------------------------
+
+/* ==============================
    Code Blocks
-   ------------------------------ */
+   ============================== */
 pre, code {
     background: #f5f5f5;
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
 }
 
-/* ------------------------------
+
+/* ==============================
    Post Metadata
-   ------------------------------ */
+   ============================== */
 .post-meta {
     color: #666;
     font-size: 0.9rem;
     margin-bottom: 2rem;
 }
 
-/* ------------------------------
+
+/* ==============================
    Table of Contents
-   ------------------------------ */
+   ============================== */
 .toc {
     background: #f5f5f5;
     padding: 1rem;
@@ -108,9 +116,10 @@ pre, code {
     margin-left: 1rem;
 }
 
-/* ------------------------------
-   Homepage Layout Spacing
-   ------------------------------ */
+
+/* ==============================
+   Homepage Layout
+   ============================== */
 .home-info {
     margin-bottom: 3rem;
 }
@@ -128,9 +137,10 @@ pre, code {
     height: 2.5rem;
 }
 
-/* ------------------------------
+
+/* ==============================
    Social Icons
-   ------------------------------ */
+   ============================== */
 .social-icons {
     margin-top: 1rem;
     margin-bottom: 2.5rem;
@@ -161,4 +171,33 @@ pre, code {
     content: "";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+}
+
+
+/* ==============================
+   Tags (Global)
+   ============================== */
+.post-tags {
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background: #eef5ff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.4rem;
+    font-size: 0.85rem;
+    color: #005A9E;
+}
+
+.tag:hover {
+    background: #d9e9ff;
+}
+
+
+/* ==============================
+   Section Description
+   ============================== */
+.section-description {
+    margin-bottom: 2rem;
 }

@@ -1,18 +1,37 @@
-# Hugo build output
-/public/
+# ----------------------------------------
+# Hugo Build & Generated Files
+# ----------------------------------------
 
-# Hugo generated resources
-/resources/_gen/
+# Hugo build output (your site is published from /docs, not /public)
+public/
 
-# Local Hugo caches and locks
+# Hugo generated resources (cache of processed assets)
+resources/_gen/
+
+# Hugo build lock file
 .hugo_build.lock
 
+
+# ----------------------------------------
 # OS-specific files
+# ----------------------------------------
+
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
 
-# Editor/IDE files
-.vscode/
-.idea/
-*.swp
 
+# ----------------------------------------
+# Editor / IDE files
+# ----------------------------------------
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Vim swap files
+*.swp

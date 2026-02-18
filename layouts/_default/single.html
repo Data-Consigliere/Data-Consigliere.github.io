@@ -1,23 +1,36 @@
 {{ define "main" }}
-<article>
 
-<h1>{{ .Title }}</h1>
+  <article>
 
-{{ if .TableOfContents }}
-<div class="toc">
-  <h3>Table of Contents</h3>
-  {{ .TableOfContents }}
-</div>
-{{ end }}
+    <!-- Post Title -->
+    <h1>{{ .Title }}</h1>
 
-<div class="post-meta">
-  {{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read
-  {{ with .Params.tags }} • {{ delimit . ", " }}{{ end }}
-</div>
+    <!-- Table of Contents -->
+    {{ if .TableOfContents }}
+      <div class="toc">
+        <h3>Table of Contents</h3>
+        {{ .TableOfContents }}
+      </div>
+    {{ end }}
 
-<div class="post-content">
-    {{ .Content }}
-  </div>
+    <!-- Metadata -->
+    <div class="post-meta">
+      {{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read
+    </div>
 
-</article>
+    {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range . }}
+          <a class="tag" href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <!-- Main Content -->
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+  </article>
+
 {{ end }}
