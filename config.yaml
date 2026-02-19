@@ -25,7 +25,7 @@ params:
       url: "https://www.linkedin.com/in/josebagina/"
     - name: email
       url: "mailto:data.consigliere@proton.me"
-
+ 
 assets:
   css:
     - css/custom.css
