@@ -1,4 +1,4 @@
-baseURL: "https://data-consigliere.github.io/dataconsigliere.github.io/"
+baseURL: "https://data-consigliere.github.io"
 languageCode: "en-us"
 title: "DataConsigliere"
 theme: "PaperMod"

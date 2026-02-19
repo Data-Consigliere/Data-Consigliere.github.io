@@ -1,7 +1,7 @@
 ---
 title: "What I Learned from Writing Online"
 date: 2026-02-18
-tags: ["writing", "learning"]
+tags: ["experiment", "learning"]
 ---
 
 This is where your article begins.
