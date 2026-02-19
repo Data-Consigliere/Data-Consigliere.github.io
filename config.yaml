@@ -1,7 +1,5 @@
 baseURL: "https://data-consigliere.github.io/"
-# Define a pasta de saída para o GitHub Pages
 publishDir: "docs"
-
 title: "DataConsigliere"
 theme: "PaperMod"
 languageCode: "en-us"
@@ -9,17 +7,30 @@ languageCode: "en-us"
 pagination:
   pagerSize: 10
 
-params:
-  # Configurações de Ativos (Essencial para GitHub Pages)
-  assets:
-    disableFingerprinting: true  # Evita que o CSS seja bloqueado por segurança (SRI)
+# --- CONFIGURAÇÕES DO MENU ---
+# Certifique-se de que "menu:" está na margem esquerda (sem espaços antes)
+menu:
+  main:
+    - name: "Start Here"
+      url: "/start-here/"
+      weight: 1
+    - name: "Writings"
+      url: "/posts/"
+      weight: 2
+    - name: "About"
+      url: "/about/"
+      weight: 3
 
-  # Configurações do Tema
+# --- PARÂMETROS DO TEMA ---
+params:
+  # Essencial para GitHub Pages
+  assets:
+    disableFingerprinting: true
+
+  # Configurações PaperMod
   profileMode:
     enabled: false
   homeInfoParams: {}
-
-  # Mostrar footer do PaperMod (necessário para social icons)
   ShowFooter: true
 
   # Redes Sociais
@@ -31,7 +42,7 @@ params:
     - name: email
       url: "mailto:data.consigliere@proton.me"
 
-# Configurações de Renderização
+# --- RENDERIZAÇÃO E TAXONOMIAS ---
 markup:
   goldmark:
     renderer:

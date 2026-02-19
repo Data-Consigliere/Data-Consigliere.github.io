@@ -1,28 +1,36 @@
-/* ----------------------------------------
-   DataConsigliere – Minimalist Look
-   ---------------------------------------- */
+/* -----------------------------------------------------------
+   DataConsigliere – Minimalist Look (Dark Mode Compatible)
+   ----------------------------------------------------------- */
 
-/* Global Layout */
+/* Layout Global */
 body {
     font-family: "Georgia", "Times New Roman", serif;
     font-size: 19px;
     line-height: 1.8;
-    color: #1a1a1a;
-    background: #ffffff;
+    /* Usa as variáveis do tema para cores dinâmicas */
+    color: var(--content);
+    background: var(--theme);
+}
+
+/* Centralização do conteúdo, menu e rodapé */
+.main, .header, .footer {
     max-width: 760px;
     margin: 0 auto;
-    padding: 3rem 1rem 4rem 1rem;
 }
 
 .main {
-    max-width: 760px;
+    padding: 0 1rem;
 }
 
-/* Headings */
+.header {
+    padding: 1rem 1rem;
+}
+
+/* Títulos - Usando a cor primária do tema */
 h1, h2, h3 {
     font-family: "Inter", "Segoe UI", sans-serif;
     font-weight: 600;
-    color: #111;
+    color: var(--primary);
     margin-top: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -32,19 +40,19 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* Links */
+/* Links - Ajustados para serem visíveis em ambos os modos */
 a {
-    color: #005A9E;
+    color: #3b82f6; /* Um azul mais vibrante para contraste */
     text-decoration: none;
-    border-bottom: 1px solid #cce0f5;
+    transition: all 0.2s ease;
 }
 
 a:hover {
-    color: #003f73;
-    border-bottom-color: #003f73;
+    filter: brightness(1.2);
+    text-decoration: underline;
 }
 
-/* Text blocks */
+/* Blocos de Texto */
 p {
     margin: 1.4rem 0;
 }
@@ -53,28 +61,39 @@ ul, ol {
     margin: 1.2rem 0 1.2rem 1.5rem;
 }
 
-/* Images */
+/* Imagens */
 img {
     max-width: 100%;
     border-radius: 6px;
     margin: 1.5rem 0 2rem 0;
 }
 
-/* Code */
-pre, code {
-    background: #f5f5f5;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
+/* Modo Escuro suave para imagens */
+.dark img {
+    opacity: .85;
 }
 
-/* Metadata */
+.dark img:hover {
+    opacity: 1;
+}
+
+/* Código - Fundo adapta-se ao tema */
+pre, code {
+    background: var(--code-bg);
+    color: var(--content);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Metadados (Datas, tempo de leitura) */
 .post-meta {
-    color: #666;
+    color: var(--secondary);
     font-size: 0.9rem;
     margin-bottom: 2rem;
 }
 
-/* Homepage spacing */
+/* Espaçamento da Homepage (suas classes customizadas) */
 .home-extra {
     margin-top: 3rem;
     margin-bottom: 4rem;
@@ -90,19 +109,28 @@ pre, code {
 }
 
 .tag {
-    background: #eef5ff;
-    padding: 0.2rem 0.5rem;
+    background: var(--code-bg);
+    padding: 0.3rem 0.6rem;
     border-radius: 4px;
     margin-right: 0.4rem;
     font-size: 0.85rem;
-    color: #005A9E;
+    color: var(--secondary);
 }
 
 .tag:hover {
-    background: #d9e9ff;
+    background: var(--tertiary);
+    color: var(--primary);
 }
 
-/* Section description */
+/* Ícones Sociais - Corrige o problema do tamanho gigante */
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+/* Descrição de Secção */
 .section-description {
     margin-bottom: 2rem;
+    color: var(--secondary);
 }
