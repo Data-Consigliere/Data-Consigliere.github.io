@@ -1,6 +1,6 @@
 baseURL: "https://data-consigliere.github.io/"
 publishDir: "docs"
-title: "DataConsigliere"
+title: "Data Consigliere"
 theme: "PaperMod"
 languageCode: "en-us"
 

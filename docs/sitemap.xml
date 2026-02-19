@@ -2,30 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://data-consigliere.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://data-consigliere.github.io/start-here/</loc>
+    <loc>http://localhost:1313/start-here/</loc>
     <lastmod>2026-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://data-consigliere.github.io/tags/experiment/</loc>
+    <loc>http://localhost:1313/tags/experiment/</loc>
     <lastmod>2026-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://data-consigliere.github.io/tags/learning/</loc>
+    <loc>http://localhost:1313/tags/learning/</loc>
     <lastmod>2026-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://data-consigliere.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://data-consigliere.github.io/posts/what-i-learned-from-writing-online/</loc>
+    <loc>http://localhost:1313/posts/what-i-learned-from-writing-online/</loc>
     <lastmod>2026-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://data-consigliere.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://data-consigliere.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://data-consigliere.github.io/categories/</loc>
+    <loc>http://localhost:1313/posts/a-funda%C3%A7%C3%A3o-do-data-consigliere-construindo-um-segundo-c%C3%A9rebro-digital/</loc>
+    <lastmod>2024-05-20T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-05-20T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/engenharia/</loc>
+    <lastmod>2024-05-20T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/filosofia/</loc>
+    <lastmod>2024-05-20T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/github-pages/</loc>
+    <lastmod>2024-05-20T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hugo/</loc>
+    <lastmod>2024-05-20T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/meta/</loc>
+    <lastmod>2024-05-20T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/n%C3%A3o-alugues-a-tua-voz/</loc>
+    <lastmod>2024-05-20T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/productivity/</loc>
+    <lastmod>2024-05-20T10:00:00+00:00</lastmod>
   </url>
 </urlset>
