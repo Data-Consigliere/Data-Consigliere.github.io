@@ -1,5 +1,5 @@
 baseURL: "https://data-consigliere.github.io/"
-# send generated site into docs/ so GitHub Pages can serve it
+# Define a pasta de saída para o GitHub Pages
 publishDir: "docs"
 
 title: "DataConsigliere"
@@ -10,6 +10,11 @@ pagination:
   pagerSize: 10
 
 params:
+  # Configurações de Ativos (Essencial para GitHub Pages)
+  assets:
+    disableFingerprinting: true  # Evita que o CSS seja bloqueado por segurança (SRI)
+
+  # Configurações do Tema
   profileMode:
     enabled: false
   homeInfoParams: {}
@@ -17,7 +22,7 @@ params:
   # Mostrar footer do PaperMod (necessário para social icons)
   ShowFooter: true
 
-  # Social icons
+  # Redes Sociais
   socialIcons:
     - name: github
       url: "https://github.com/JoseBagina"
@@ -25,27 +30,12 @@ params:
       url: "https://www.linkedin.com/in/josebagina/"
     - name: email
       url: "mailto:data.consigliere@proton.me"
- 
-assets:
-  css:
-    - css/custom.css
 
-menu:
-  main:
-    - name: "Start Here"
-      url: "/start-here/"
-      weight: 1
-    - name: "Writings"
-      url: "/posts/"
-      weight: 2
-    - name: "About"
-      url: "/about/"
-      weight: 3
-
+# Configurações de Renderização
 markup:
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: true # Permite HTML dentro do Markdown
 
 taxonomies:
   tag: "tags"
