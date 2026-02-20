@@ -16,18 +16,6 @@
       <description>What Data Consigliere is, who it&amp;#39;s for, and where to start.</description>
     </item>
     <item>
-      <title>What I Learned from Writing Online</title>
-      <link>https://data-consigliere.github.io/posts/what-i-learned-from-writing-online/</link>
-      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://data-consigliere.github.io/posts/what-i-learned-from-writing-online/</guid>
-      <description>&lt;p&gt;This is where your article begins.&lt;/p&gt;
-&lt;p&gt;Use clean paragraphs, short sentences, and clear structure.&lt;/p&gt;
-&lt;h2 id=&#34;a-section-heading&#34;&gt;A section heading&lt;/h2&gt;
-&lt;p&gt;More content here.&lt;/p&gt;
-&lt;h2 id=&#34;another-section&#34;&gt;Another section&lt;/h2&gt;
-&lt;p&gt;And so on.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>About</title>
       <link>https://data-consigliere.github.io/about/</link>
       <pubDate>Mon, 16 Feb 2026 10:00:00 +0000</pubDate>
@@ -35,18 +23,11 @@
       <description>Thirty years in Analytics and BI. Now going deeper.</description>
     </item>
     <item>
-      <title>A Fundação do Data Consigliere: Construindo um Segundo Cérebro Digital</title>
-      <link>https://data-consigliere.github.io/posts/a-funda%C3%A7%C3%A3o-do-data-consigliere-construindo-um-segundo-c%C3%A9rebro-digital/</link>
-      <pubDate>Mon, 20 May 2024 10:00:00 +0000</pubDate>
-      <guid>https://data-consigliere.github.io/posts/a-funda%C3%A7%C3%A3o-do-data-consigliere-construindo-um-segundo-c%C3%A9rebro-digital/</guid>
-      <description>Um mergulho técnico e filosófico na construção deste blog usando Hugo, PaperMod e GitHub Pages.</description>
-    </item>
-    <item>
-      <title>Não Alugues a Tua Voz</title>
-      <link>https://data-consigliere.github.io/posts/n%C3%A3o-alugues-a-tua-voz/</link>
-      <pubDate>Mon, 20 May 2024 10:00:00 +0000</pubDate>
-      <guid>https://data-consigliere.github.io/posts/n%C3%A3o-alugues-a-tua-voz/</guid>
-      <description>Por que construí este blog do zero — e o que isso tem a ver com a forma como penso sobre dados, decisões e autonomia.</description>
+      <title>Don&#39;t Rent Your Voice</title>
+      <link>https://data-consigliere.github.io/posts/dont-rent-your-voice/</link>
+      <pubDate>Sun, 19 May 2024 10:00:00 +0000</pubDate>
+      <guid>https://data-consigliere.github.io/posts/dont-rent-your-voice/</guid>
+      <description>Why build your own platform instead of using ready‑made solutions? Digital sovereignty, the Hugo &#43; GitHub Pages stack and what that has to do with how I think about data, decisions, and autonomy.</description>
     </item>
     <item>
       <title>Data Consigliere</title>

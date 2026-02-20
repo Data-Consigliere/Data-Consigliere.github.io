@@ -27,6 +27,11 @@ params:
   description: "30 years of Data. Less hype, more clarity."
   author: "José Bagina"
   
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+  
   # Essencial para GitHub Pages
   assets:
     disableFingerprinting: true
@@ -39,7 +44,7 @@ params:
 
   ShowCodeCopyButtons: true
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   
   # Redes Sociais

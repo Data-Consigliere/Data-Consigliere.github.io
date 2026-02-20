@@ -55,6 +55,7 @@ a:hover {
 
 code {
     background: #e8e8e8;
+    color: #1a1a1a; /* add this */
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-size: 0.88em;
@@ -133,4 +134,35 @@ img {
     width: 24px;
     height: 24px;
     fill: currentColor;
+}
+
+.post-list { list-style: none; padding: 0; }
+
+.post-list-item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-thumb {
+  width: 140px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin: 0; /* reset global img margin */
+}
+
+.post-list-meta a {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.post-desc {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--secondary);
 }

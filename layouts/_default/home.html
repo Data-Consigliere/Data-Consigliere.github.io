@@ -1,24 +1,30 @@
 {{ define "main" }}
 
-  <!-- Homepage intro from _index.md -->
   <div class="home-extra">
     {{ .Content }}
   </div>
 
   <div class="home-spacing"></div>
 
-  <!-- Posts list -->
   <h2>Writings</h2>
 
   {{ $posts := where .Site.RegularPages "Section" "posts" }}
   {{ $posts := sort $posts "Date" "desc" }}
 
   {{ if gt (len $posts) 0 }}
-    <ul>
+    <ul class="post-list">
       {{ range $posts }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <span class="post-meta"> — {{ .Date.Format "Jan 2, 2006" }}</span>
+        <li class="post-list-item">
+          {{ with .Params.cover }}
+            <a href="{{ $.RelPermalink }}">
+              <img class="post-thumb" src="{{ .image }}" alt="{{ .alt }}" />
+            </a>
+          {{ end }}
+          <div class="post-list-meta">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="post-meta"> — {{ .Date.Format "Jan 2, 2006" }}</span>
+            {{ with .Description }}<p class="post-desc">{{ . }}</p>{{ end }}
+          </div>
         </li>
       {{ end }}
     </ul>
@@ -26,7 +32,6 @@
     <p>No posts yet.</p>
   {{ end }}
 
-  <!-- Social icons -->
   <div style="margin-top: 2rem;">
     {{ partial "social_icons.html" (dict "socialIcons" site.Params.socialIcons "align" "left") }}  
   </div>
