@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>What Happens When BI Developers Become the Users They Once Mocked | Data Consigliere</title>
+<meta name="keywords" content="Opinion, AI, Data Literacy">
+<meta name="description" content="How a decade of judging vague requests came back to hit us — and what it means for everyone working with AI today.">
+<meta name="author" content="José Bagina">
+<link rel="canonical" href="https://data-consigliere.github.io/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://data-consigliere.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://data-consigliere.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://data-consigliere.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://data-consigliere.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://data-consigliere.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://data-consigliere.github.io/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://data-consigliere.github.io/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/">
+  <meta property="og:site_name" content="Data Consigliere">
+  <meta property="og:title" content="What Happens When BI Developers Become the Users They Once Mocked">
+  <meta property="og:description" content="How a decade of judging vague requests came back to hit us — and what it means for everyone working with AI today.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-10T11:30:00+00:00">
+    <meta property="article:modified_time" content="2026-03-10T11:30:00+00:00">
+    <meta property="article:tag" content="Opinion">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Data Literacy">
+    <meta property="og:image" content="https://data-consigliere.github.io/images/IA%20Karmic%20Boomerang.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://data-consigliere.github.io/images/IA%20Karmic%20Boomerang.png">
+<meta name="twitter:title" content="What Happens When BI Developers Become the Users They Once Mocked">
+<meta name="twitter:description" content="How a decade of judging vague requests came back to hit us — and what it means for everyone working with AI today.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Writings",
+      "item": "https://data-consigliere.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "What Happens When BI Developers Become the Users They Once Mocked",
+      "item": "https://data-consigliere.github.io/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "What Happens When BI Developers Become the Users They Once Mocked",
+  "name": "What Happens When BI Developers Become the Users They Once Mocked",
+  "description": "How a decade of judging vague requests came back to hit us — and what it means for everyone working with AI today.",
+  "keywords": [
+    "Opinion", "AI", "Data Literacy"
+  ],
+  "articleBody": " Forgive me, users, for I have sinned. I once mocked you. But we are the same.\nIt didn’t hit me in one moment.\nIt crept up slowly — somewhere between the fifteenth iteration on a prompt that still wasn’t landing right, and the third time I caught myself thinking “that’s not quite what I meant.” I paused. And in that pause, something deeply uncomfortable surfaced. I had heard these exact words before. Not from me. From them. The people across the table. The ones I had spent years diplomatically managing while privately rolling my eyes.\nMonths of working with LLMs do something strange to you. At first it feels like power — the machine is fast, tireless, impressively competent at the scaffolding work that used to eat your afternoons. Then, quietly, the cracks appear. The outputs are close but not right. You refine. Still not right. You write longer and longer instructions trying to explain what you actually mean, growing faintly frustrated that it still isn’t getting there — and the whole time, somewhere in the back of your mind, a memory is trying to surface.\nThe ghost of every person I had ever quietly judged in a requirements meeting.\n“I’ll know it when I see it.”\nYou dismissed them then. You have been them for months.\nThat’s the moment. Not a blunder, not a bad day — a slow, creeping, deeply inconvenient recognition that the skills you quietly judged in others were the skills you were quietly missing yourself. The AI didn’t expose a technical gap. It exposed something older. A blind spot you’d been professionally decorating around for years.\nThe job had always been two things at once. The brute mechanical work — code, logic, delivery. And something quieter and considerably harder to put on a CV: reading what people actually needed, asking the questions they hadn’t thought to ask yet, knowing when the output was confidently routing everyone toward the lake. We were simultaneously the builders and the translators. We just never had a clean name for the difference.\nThe Five Sins. And the Karma They Brought. For years, we had a private list. The complaints we kept mostly internal — too professional to say out loud, but very much alive in every dev chat and every standup that ran four minutes too long.\n“They want everything on one screen.” Nobody used those exact words. What actually happened was this: someone arrived with genuine purpose. A real problem. A legitimate need. They described it in broad strokes — confidently, fluently — and the request landed on your desk as something vast and shapeless. No priorities. No constraints. No definition of what mattered most. The entire problem space, delivered at once.\nNow you sit with an AI tool. You have a real problem to solve. You open the prompt box and describe it — broadly, confidently — and hit send. What returns is vast and shapeless. The AI had no guardrails either. No filter for what actually matters in this specific context, for this specific decision, in this specific moment.\nYou stare at it. You finally understand that face. The slight blankness. The polite tilted head. The “hmm.”\nYou gave it the entire problem space. It gave you everything back. And everything, as it turns out, is nobody’s friend.\nThe invisible risk isn’t the person typing — it’s that the tool gave them no signal anything went wrong.\n“They don’t know what they want.” The person across the table wasn’t being difficult. They had simply skipped the uncomfortable cognitive work of translating a felt business need into a defined, buildable request. The vision existed as an instinct, a direction, a general sense of “better than this.” And you, without ever calling it that, were already running therapy.\nNow consider the last time you opened a prompt box without having fully defined — to yourself, before typing a single word — what success actually looked like. Not approximately. Precisely.\nIf you’re honest, the thinking often started when the first draft arrived. You didn’t know what you wanted either. You just had a faster machine to not know it with.\n“They change their minds the second they see it.” You’d spend days building exactly what was specified — what was said to be specified, which is a different thing entirely — demo it, and watch the person tilt their head at something that was suddenly, concretely, not what they thought they wanted. The requirement hadn’t changed. It had simply never been real until it existed in front of them.\nAbstract things can only be agreed with. Concrete things can be reacted to. You rebuilt. You briefly considered a different career in something peaceful, like cooking.\nThe karma is almost poetic in its precision.\nThe AI generates a first draft in seconds. You look at it — and you immediately, viscerally know it’s wrong. Not catastrophically. Subtly, specifically wrong in ways that are suddenly completely obvious now that something tangible exists in front of you. The requirement crystallized on contact with the prototype, exactly as it always did, exactly as you always found so frustrating in others.\n“They can’t write a spec to save their lives.” Translating a felt business need into a precisely documented, buildable specification is a specific, unglamorous skill that most people had never been asked to develop. So instead of specifications there were suggestions. And you — the developer — absorbed the imprecision and converted it into something real. You were the translation layer.\nNow consider what sits between your prompt and the AI. Nothing. There is no translation layer. No professional judgment absorbing your imprecision.\nThere is a model that executes your words with complete, terrifying literalness — filling every implicit assumption, every unfilled gap, every piece of context you forgot to include because it felt obvious, with its best statistical inference.\nPrompt engineering is specification writing. Every vague prompt is the spec you spent years wishing someone else would write better. You are now the someone else.\n“They don’t trust the numbers.” The dashboard is live. The logic is sound. The numbers are correct — verifiably, demonstrably correct — and still there’s the raised eyebrow. The request to cross-reference with a spreadsheet that predates half the current team. We found it maddening.\nThis is where the karma stops being ironic and starts being consequential. It splits into two equally dangerous directions :\nSome of us review AI output briefly, sense-check it lightly, and ship it — until the hallucination is subtle enough to confirm what everyone already believed, and nobody thinks to question it. We became the person who waves the numbers through. Others develop a faint instinct that something’s off but can’t trace it to the source. They sit with the paralysis. Generating a chart used to require knowing what you were asking. Now it requires knowing what you got. Those are different skills — and most organizations only taught one of them.\nThe Verdict Here’s what connects all five sins into a single diagnosis. The problem was never intentions or intelligence. The problem was always the gap between what lived clearly in someone’s head and what actually made it into the room. We spent years bridging that gap — and in doing so, we developed two distinct capabilities that we never thought to name.\nHalf the job was mechanical execution: the brute force of code, logic, and delivery - The Boxer.\nThe other half was reading the room, running therapy sessions without ever calling them that, asking the question nobody else was asking - The Chess Player.\nFor a decade, the Boxing was the visible credential. Then the ski lift opened.\nExecutives. Marketing managers. Finance directors typing instincts into prompt boxes with complete professional confidence. All of them, suddenly at the summit, generating outputs and calling them insights.\nThe production of data got democratized. The ability to verify, not so much.\nThe gap between someone who truly understands data and someone who simply generates it didn’t close — it went underground, masked by the confident fluency of AI output that looks authoritative whether it is precisely right or quietly, expensively wrong. More data. More noise. Fewer people who can tell the difference.\nNone of us called it a skill at the time. It was just the other part of the job — the part that happened before the code and after the meeting, in the margins nobody measured. The reading of rooms. The asking of questions nobody had thought to ask yet. The knowing when to push back on an output that looked right but isn’t.\nWhich means the Chess Player part just became harder to replace, not easier. Not because the role got more technical. Because it got more human.\nWhat Now Before opening a prompt box, answer this in one sentence: what specific decision does this output need to support? Not approximately. One sentence. If you can’t answer it, you’re not ready to prompt. The AI isn’t the meeting — it’s what happens after the meeting, when the thinking is already done.\nTreat every prompt like a specification. Every missing detail is a hallucination waiting to happen. Every assumption left implicit is a gap the model fills with its best guess — fluently, confidently, and occasionally completely wrong. Write it like someone else’s credibility depends on getting it right. Increasingly, it does.\nKeep your hands on the wheel. The instinct that something feels off is the Chess Player doing its job. Trust it. Investigate it. Your domain knowledge is the verification layer the machine doesn’t have, and it cannot be automated into existence.\nThe ski lift carries everyone to the summit now, effortlessly, for free. At the top of the mountain the air is thin, and the view is great. But at the summit, someone still needs to know where to aim the skis.\nFor anyone shaping how these tools reach a wider team:\nThe people now using them are in exactly the same gap we were in when we first opened the prompt box. They shouldn’t have to build the guardrails alone — validated templates, documented logic, a shared framework for knowing when to trust the output and when to pull the thread. Not as control mechanisms. As quality infrastructure. The same way seatbelts aren’t about distrusting drivers.\nThe boomerang found all of us. That’s not a catastrophe. It’s an education.\nWe spent years asking the hard questions on behalf of the business. The business just got AI. If that questions doesn’t have a clear answer in your organization — that’s where to start.\n",
+  "wordCount" : "1764",
+  "inLanguage": "en",
+  "image":"https://data-consigliere.github.io/images/IA%20Karmic%20Boomerang.png","datePublished": "2026-03-10T11:30:00Z",
+  "dateModified": "2026-03-10T11:30:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "José Bagina"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://data-consigliere.github.io/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Consigliere",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://data-consigliere.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://data-consigliere.github.io/" accesskey="h" title="Data Consigliere (Alt + H)">Data Consigliere</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://data-consigliere.github.io/start-here/" title="Start Here">
+                    <span>Start Here</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://data-consigliere.github.io/posts/" title="Writings">
+                    <span>Writings</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://data-consigliere.github.io/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      What Happens When BI Developers Become the Users They Once Mocked
+    </h1>
+    <div class="post-description">
+      How a decade of judging vague requests came back to hit us — and what it means for everyone working with AI today.
+    </div>
+    <div class="post-meta"><span title='2026-03-10 11:30:00 +0000 UTC'>March 10, 2026</span>&nbsp;·&nbsp;<span>9 min</span>&nbsp;·&nbsp;<span>José Bagina</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="https://data-consigliere.github.io/images/IA%20Karmic%20Boomerang.png" alt="A split-scene illustration showing the same professional twice — confident and arms-crossed on the left surrounded by data dashboards, and hunched over a laptop on the right with a ghost figure looming behind him, a glowing boomerang arcing between them.">
+        <figcaption>The fifteenth iteration. The pause. The uncomfortable recognition.</figcaption>
+</figure>
+  <div class="post-content"><blockquote>
+<p>Forgive me, users, for I have sinned. I once mocked you. But we are the same.</p>
+</blockquote>
+<p>It didn&rsquo;t hit me in one moment.</p>
+<p>It crept up slowly — somewhere between the fifteenth iteration on a prompt that still wasn&rsquo;t landing right, and the third time I caught myself thinking <em>&ldquo;that&rsquo;s not quite what I meant.&rdquo;</em> I paused. And in that pause, something deeply uncomfortable surfaced. I had heard these exact words before. Not from me. From them. The people across the table. The ones I had spent years diplomatically managing while privately rolling my eyes.</p>
+<p>Months of working with LLMs do something strange to you. At first it feels like power — the machine is fast, tireless, impressively competent at the scaffolding work that used to eat your afternoons. Then, quietly, the cracks appear. The outputs are close but not right. You refine. Still not right. You write longer and longer instructions trying to explain what you actually mean, growing faintly frustrated that it still isn&rsquo;t getting there — and the whole time, somewhere in the back of your mind, a memory is trying to surface.</p>
+<p>The ghost of every person I had ever quietly judged in a requirements meeting.</p>
+<blockquote>
+<p><em>&ldquo;I&rsquo;ll know it when I see it.&rdquo;</em></p>
+</blockquote>
+<p>You dismissed them then. You have been them for months.</p>
+<p>That&rsquo;s the moment. Not a blunder, not a bad day — a slow, creeping, deeply inconvenient recognition that the skills you quietly judged in others were the skills you were quietly missing yourself. The AI didn&rsquo;t expose a technical gap. It exposed something older. A blind spot you&rsquo;d been professionally decorating around for years.</p>
+<p>The job had always been two things at once. The brute mechanical work — code, logic, delivery. And something quieter and considerably harder to put on a CV: reading what people actually needed, asking the questions they hadn&rsquo;t thought to ask yet, knowing when the output was confidently routing everyone toward the lake. We were simultaneously the builders and the translators. We just never had a clean name for the difference.</p>
+<hr>
+<h1 id="the-five-sins-and-the-karma-they-brought">The Five Sins. And the Karma They Brought.<a hidden class="anchor" aria-hidden="true" href="#the-five-sins-and-the-karma-they-brought">#</a></h1>
+<p>For years, we had a private list. The complaints we kept mostly internal — too professional to say out loud, but very much alive in every dev chat and every standup that ran four minutes too long.</p>
+<h3 id="heading"><strong>&ldquo;They want everything on one screen.&rdquo;</strong><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h3>
+<p>Nobody used those exact words. What actually happened was this: someone arrived with genuine purpose. A real problem. A legitimate need. They described it in broad strokes — confidently, fluently — and the request landed on your desk as something vast and shapeless. No priorities. No constraints. No definition of what mattered most. The entire problem space, delivered at once.</p>
+<p>Now you sit with an AI tool. You have a real problem to solve. You open the prompt box and describe it — broadly, confidently — and hit send. What returns is vast and shapeless. The AI had no guardrails either. No filter for what actually matters in this specific context, for this specific decision, in this specific moment.</p>
+<p>You stare at it. You finally understand that face. The slight blankness. The polite tilted head. The &ldquo;hmm.&rdquo;</p>
+<p>You gave it the entire problem space. It gave you everything back. And everything, as it turns out, is nobody&rsquo;s friend.</p>
+<p><em>The invisible risk isn&rsquo;t the person typing — it&rsquo;s that the tool gave them no signal anything went wrong.</em></p>
+<h3 id="heading-1"><strong>&ldquo;They don&rsquo;t know what they want.&rdquo;</strong><a hidden class="anchor" aria-hidden="true" href="#heading-1">#</a></h3>
+<p>The person across the table wasn&rsquo;t being difficult. They had simply skipped the uncomfortable cognitive work of translating a felt business need into a defined, buildable request. The vision existed as an instinct, a direction, a general sense of &ldquo;better than this.&rdquo; And you, without ever calling it that, were already running therapy.</p>
+<p>Now consider the last time you opened a prompt box without having fully defined — to yourself, before typing a single word — what success actually looked like. Not approximately. Precisely.</p>
+<p>If you&rsquo;re honest, the thinking often started when the first draft arrived. You didn&rsquo;t know what you wanted either. You just had a faster machine to not know it with.</p>
+<h3 id="heading-2"><strong>&ldquo;They change their minds the second they see it.&rdquo;</strong><a hidden class="anchor" aria-hidden="true" href="#heading-2">#</a></h3>
+<p>You&rsquo;d spend days building exactly what was specified — what was <em>said</em> to be specified, which is a different thing entirely — demo it, and watch the person tilt their head at something that was suddenly, concretely, not what they thought they wanted. The requirement hadn&rsquo;t changed. It had simply never been real until it existed in front of them.</p>
+<p>Abstract things can only be agreed with. Concrete things can be reacted to. You rebuilt. You briefly considered a different career in something peaceful, like cooking.</p>
+<p><strong>The karma is almost poetic in its precision.</strong></p>
+<p>The AI generates a first draft in seconds. You look at it — and you immediately, viscerally <em>know</em> it&rsquo;s wrong. Not catastrophically. Subtly, specifically wrong in ways that are suddenly completely obvious now that something tangible exists in front of you. The requirement crystallized on contact with the prototype, exactly as it always did, exactly as you always found so frustrating in others.</p>
+<h3 id="heading-3"><strong>&ldquo;They can&rsquo;t write a spec to save their lives.&rdquo;</strong><a hidden class="anchor" aria-hidden="true" href="#heading-3">#</a></h3>
+<p>Translating a felt business need into a precisely documented, buildable specification is a specific, unglamorous skill that most people had never been asked to develop. So instead of specifications there were suggestions. And you — the developer — absorbed the imprecision and converted it into something real. You were the translation layer.</p>
+<p>Now consider what sits between your prompt and the AI. Nothing. There is no translation layer. No professional judgment absorbing your imprecision.</p>
+<p>There is a model that executes your words with complete, terrifying literalness — filling every implicit assumption, every unfilled gap, every piece of context you forgot to include because it felt obvious, with its best statistical inference.</p>
+<p>Prompt engineering is specification writing. Every vague prompt is the spec you spent years wishing someone else would write better. You are now the someone else.</p>
+<h3 id="heading-4"><strong>&ldquo;They don&rsquo;t trust the numbers.&rdquo;</strong><a hidden class="anchor" aria-hidden="true" href="#heading-4">#</a></h3>
+<p>The dashboard is live. The logic is sound. The numbers are correct — verifiably, demonstrably correct — and still there&rsquo;s the raised eyebrow. The request to cross-reference with a spreadsheet that predates half the current team. We found it maddening.</p>
+<p>This is where the karma stops being ironic and starts being consequential. It splits into two equally dangerous directions :</p>
+<ul>
+<li>Some of us review AI output briefly, sense-check it lightly, and ship it — until the hallucination is subtle enough to confirm what everyone already believed, and nobody thinks to question it. We became the person who waves the numbers through.</li>
+<li>Others develop a faint instinct that something&rsquo;s off but can&rsquo;t trace it to the source. They sit with the paralysis.</li>
+</ul>
+<p>Generating a chart used to require knowing what you were asking. Now it requires knowing what you got. Those are different skills — and most organizations only taught one of them.</p>
+<hr>
+<h1 id="the-verdict">The Verdict<a hidden class="anchor" aria-hidden="true" href="#the-verdict">#</a></h1>
+<p>Here&rsquo;s what connects all five sins into a single diagnosis. The problem was never intentions or intelligence. <strong>The problem was always the gap between what lived clearly in someone&rsquo;s head and what actually made it into the room</strong>. We spent years bridging that gap — and in doing so, we developed two distinct capabilities that we never thought to name.</p>
+<p>Half the job was mechanical execution: the brute force of code, logic, and delivery - <strong>The Boxer</strong>.</p>
+<p>The other half was reading the room, running therapy sessions without ever calling them that, asking the question nobody else was asking - <strong>The Chess Player</strong>.</p>
+<p>For a decade, the Boxing was the visible credential. Then the ski lift opened.</p>
+<p>Executives. Marketing managers. Finance directors typing instincts into prompt boxes with complete professional confidence. All of them, suddenly at the summit, generating outputs and calling them insights.</p>
+<p>The production of data got democratized. The ability to verify, not so much.</p>
+<p>The gap between someone who truly understands data and someone who simply generates it didn&rsquo;t close — it went underground, masked by the confident fluency of AI output that looks authoritative whether it is precisely right or quietly, expensively wrong. More data. More noise. Fewer people who can tell the difference.</p>
+<p>None of us called it a skill at the time. It was just the other part of the job — the part that happened before the code and after the meeting, in the margins nobody measured. The reading of rooms. The asking of questions nobody had thought to ask yet. The knowing when to push back on an output that looked right but isn&rsquo;t.</p>
+<p><strong>Which means the Chess Player part just became harder to replace, not easier. Not because the role got more technical. Because it got more human.</strong></p>
+<hr>
+<h1 id="what-now">What Now<a hidden class="anchor" aria-hidden="true" href="#what-now">#</a></h1>
+<p>Before opening a prompt box, answer this in one sentence: <em>what specific decision does this output need to support?</em> Not approximately. One sentence. If you can&rsquo;t answer it, you&rsquo;re not ready to prompt. <strong>The AI isn&rsquo;t the meeting</strong> — it&rsquo;s what happens after the meeting, when the thinking is already done.</p>
+<p><strong>Treat every prompt like a specification</strong>. Every missing detail is a hallucination waiting to happen. Every assumption left implicit is a gap the model fills with its best guess — fluently, confidently, and occasionally completely wrong. Write it like someone else&rsquo;s credibility depends on getting it right. Increasingly, it does.</p>
+<p>Keep your hands on the wheel. The instinct that something feels off is the Chess Player doing its job. Trust it. Investigate it. <strong>Your domain knowledge is the verification layer the machine doesn&rsquo;t have</strong>, and it cannot be automated into existence.</p>
+<p>The ski lift carries everyone to the summit now, effortlessly, for free. At the top of the mountain the air is thin, and the view is great. But at the summit, someone still needs to know where to aim the skis.</p>
+<blockquote>
+<p><strong>For anyone shaping how these tools reach a wider team:</strong></p>
+<p>The people now using them are in exactly the same gap we were in when we first opened the prompt box. They shouldn&rsquo;t have to build the guardrails alone — validated templates, documented logic, a shared framework for knowing when to trust the output and when to pull the thread. Not as control mechanisms. As quality infrastructure. The same way seatbelts aren&rsquo;t about distrusting drivers.</p>
+</blockquote>
+<p>The boomerang found all of us. That&rsquo;s not a catastrophe. It&rsquo;s an education.</p>
+<p><em>We spent years asking the hard questions on behalf of the business. The business just got AI. If that questions doesn&rsquo;t have a clear answer in your organization — that&rsquo;s where to start.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://data-consigliere.github.io/tags/opinion/">Opinion</a></li>
+      <li><a href="https://data-consigliere.github.io/tags/ai/">AI</a></li>
+      <li><a href="https://data-consigliere.github.io/tags/data-literacy/">Data Literacy</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://data-consigliere.github.io/posts/dont-rent-your-voice/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Don&#39;t Rent Your Voice</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://data-consigliere.github.io/">Data Consigliere</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
