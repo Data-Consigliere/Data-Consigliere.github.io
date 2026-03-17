@@ -35,3 +35,9 @@ Thumbs.db
 
 # Vim swap files
 *.swp
+
+
+# ----------------------------------------
+# VS Code Workspace file
+# ----------------------------------------
+Data-Consigliere.github.io.code-workspace
