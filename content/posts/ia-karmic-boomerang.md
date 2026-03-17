@@ -20,6 +20,8 @@ cover:
 toc: true
 readingTime: true
 featured: true
+ShowShareButtons: true
+ShowRelatedPosts: true
 ---
 
 > Forgive me, users, for I have sinned. I once mocked you. But we are the same.
@@ -137,4 +139,4 @@ The ski lift carries everyone to the summit now, effortlessly, for free. At the 
 
 The boomerang found all of us. That's not a catastrophe. It's an education.
 
-_We spent years asking the hard questions on behalf of the business. The business just got AI. If that questions doesn't have a clear answer in your organization — that's where to start._
+_We spent years asking the hard questions on behalf of the business. The business just got AI. If that question doesn't have a clear answer in your organization — that's where to start._
