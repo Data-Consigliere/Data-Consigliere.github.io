@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Data Consigliere</title>
-    <link>http://localhost:1313/</link>
+    <link>https://data-consigliere.github.io/</link>
     <description>Recent content on Data Consigliere</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Apr 2026 18:35:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://data-consigliere.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Senior’s Edge: Why My First Line of Python Was a Unit Test</title>
-      <link>http://localhost:1313/posts/the-seniors-edge-why-my-first-line-of-python-was-a-unit-test/</link>
+      <link>https://data-consigliere.github.io/posts/the-seniors-edge-why-my-first-line-of-python-was-a-unit-test/</link>
       <pubDate>Mon, 06 Apr 2026 18:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/the-seniors-edge-why-my-first-line-of-python-was-a-unit-test/</guid>
+      <guid>https://data-consigliere.github.io/posts/the-seniors-edge-why-my-first-line-of-python-was-a-unit-test/</guid>
       <description>A reflection on the &amp;#39;Expert’s Paradox&amp;#39;—how professional ego hinders learning, and why a senior leader chose to start with accountability over syntax.</description>
     </item>
     <item>
       <title>What Happens When BI Developers Become the Users They Once Mocked</title>
-      <link>http://localhost:1313/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/</link>
+      <link>https://data-consigliere.github.io/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/</link>
       <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/</guid>
+      <guid>https://data-consigliere.github.io/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/</guid>
       <description>How a decade of judging vague requests came back to hit us — and what it means for everyone working with AI today.</description>
     </item>
     <item>
       <title>Don&#39;t Rent Your Voice</title>
-      <link>http://localhost:1313/posts/dont-rent-your-voice/</link>
+      <link>https://data-consigliere.github.io/posts/dont-rent-your-voice/</link>
       <pubDate>Sun, 22 Feb 2026 11:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/dont-rent-your-voice/</guid>
+      <guid>https://data-consigliere.github.io/posts/dont-rent-your-voice/</guid>
       <description>Your voice on someone else&amp;#39;s terms is just borrowed time.</description>
     </item>
     <item>
       <title>Start Here</title>
-      <link>http://localhost:1313/start-here/</link>
+      <link>https://data-consigliere.github.io/start-here/</link>
       <pubDate>Sun, 15 Feb 2026 11:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/start-here/</guid>
+      <guid>https://data-consigliere.github.io/start-here/</guid>
       <description>New here? Start with the context — what this site is, who it&amp;#39;s for, and where to begin.</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://data-consigliere.github.io/about/</link>
       <pubDate>Sun, 08 Feb 2026 07:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://data-consigliere.github.io/about/</guid>
       <description>BI Dev at the heart, getting back to the terminal. Documenting the transition, unfiltered.</description>
     </item>
   </channel>
