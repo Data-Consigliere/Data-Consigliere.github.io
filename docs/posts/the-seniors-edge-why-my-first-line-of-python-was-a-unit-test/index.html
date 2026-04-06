@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The Senior’s Edge: Why My First Line of Python Was a Unit Test | Data Consigliere</title>
+<meta name="keywords" content="Career, Data Science, Python, Leadership">
+<meta name="description" content="A reflection on the &#39;Expert’s Paradox&#39;—how professional ego hinders learning, and why a senior leader chose to start with accountability over syntax.">
+<meta name="author" content="José Bagina">
+<link rel="canonical" href="http://localhost:1313/posts/the-seniors-edge-why-my-first-line-of-python-was-a-unit-test/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/the-seniors-edge-why-my-first-line-of-python-was-a-unit-test/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/posts/the-seniors-edge-why-my-first-line-of-python-was-a-unit-test/">
+  <meta property="og:site_name" content="Data Consigliere">
+  <meta property="og:title" content="The Senior’s Edge: Why My First Line of Python Was a Unit Test">
+  <meta property="og:description" content="A reflection on the &#39;Expert’s Paradox&#39;—how professional ego hinders learning, and why a senior leader chose to start with accountability over syntax.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-06T18:35:00+01:00">
+    <meta property="article:modified_time" content="2026-04-06T18:35:00+01:00">
+    <meta property="article:tag" content="Career">
+    <meta property="article:tag" content="Data Science">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Leadership">
+    <meta property="og:image" content="http://localhost:1313/images/senior-python-field-notebook.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/senior-python-field-notebook.png">
+  <meta name="twitter:title" content="The Senior’s Edge: Why My First Line of Python Was a Unit Test">
+  <meta name="twitter:description" content="A reflection on the &#39;Expert’s Paradox&#39;—how professional ego hinders learning, and why a senior leader chose to start with accountability over syntax.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Writings",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The Senior’s Edge: Why My First Line of Python Was a Unit Test",
+      "item": "http://localhost:1313/posts/the-seniors-edge-why-my-first-line-of-python-was-a-unit-test/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Senior’s Edge: Why My First Line of Python Was a Unit Test",
+  "name": "The Senior’s Edge: Why My First Line of Python Was a Unit Test",
+  "description": "A reflection on the 'Expert’s Paradox'—how professional ego hinders learning, and why a senior leader chose to start with accountability over syntax.",
+  "keywords": [
+    "Career", "Data Science", "Python", "Leadership"
+  ],
+  "articleBody": "Most career advice for senior leaders is draped in comfortable lies. We are told that our “soft skills” and “domain expertise” are our ultimate shields.\nI believed that, too — right up until I sat down at 9:00 AM facing a blank VS Code editor and realised that thirty years of strategic wins felt remarkably thin.\nIn three weeks, I start an intensive Data Science bootcamp at Le Wagon 1 . A deliberate move. The kind that looks like ambition from the outside and feels, from the inside, more like controlled demolition — tearing down a professional identity built on certainty so you can rebuild it on something more durable.\nBut the dismantling started earlier than I expected.\nThe Fog Doesn’t Care About Your CV For three decades, my value has been tied to certainty. The job — the actual job, not the title — was to walk into rooms full of ambiguity and make the fog legible for everyone else.\nThen I encountered TypeError: 'NoneType' object is not subscriptable, and suddenly, the fog was mine alone.\nThis is what I’ve started calling the Expert’s Paradox: the very thing that makes you effective in a leadership role — the reflex to project competence — becomes the biggest obstacle when you sit down to learn something genuinely new.\nA junior developer expects to fail. For someone who has spent decades being the person who clarifies things for others, failing at a basic loop doesn’t just sting. It feels, in some quiet, embarrassing way, like identity collapse.\nI spent some time fighting that feeling instead of writing code. I’d read the error message, feel a flicker of something close to shame, and go do something productive instead — answer emails, review a deck, anything. The syntax wasn’t the problem. The inner ego was the problem.\nThe shift I eventually had to make was simple but uncomfortable: I had to give myself permission to be bad at this, on purpose, for a while. Not as a strategy. Just as a fact.\nSystems, Not Scripts Once I stopped performing competence and started actually learning, the first thing I noticed was the difference between what the internet teaches and what I actually needed.\nThe internet is full of what I’ve come to think of as Survival Python — the “Hello World” scripts, the basic loops, the snippets that live and die in a single Jupyter Notebook cell. They give you a quick hit of dopamine: the code ran, the chart appeared.\nBut in any professional context, “it works on my machine” is a liability, not an achievement. I know that. I’ve spent years telling other people that. So I made an early decision to approach this differently — not just learning to write code, but learning to write code the way a professional would.\nBorrowing project templates 2 that impose structure from the start. Using modern tooling like the uv package manager 3 to handle environments cleanly. Asking not just “how do I calculate this average?” but “how do I structure this so someone else could run it tomorrow?”\nA career spent recognizing patterns makes one truth clear : technical debt isn’t just a cost; it’s a tax always collected with heavy interest further down the road. As it happens, learning follows the same logic. What feels like a ‘hack’ or a productive shortcut today is simply the seed of tomorrow’s frustration.\nThe Safety Harness The most important thing I’ve done in this preparation period isn’t a framework or a tool. It’s writing unit tests.\nMost people treat testing as an advanced topic — something you unlock once you’ve mastered the basics. I came to think that’s exactly backwards.\nWhat I’m most afraid of, working in a new space, isn’t hard work. It’s invisible failure. A silent error in a spreadsheet that propagates through an analysis and surfaces three weeks later in a board presentation — that caution is professionally encoded in me after three decades.\nDrawing on practitioners like Eugene Yan 4 , I’ve started treating unit tests not as a chore but as an insurance policy for my own logic. Writing a test before or alongside the code does two things.\nFirst, it forces you to define what success actually looks like before you start — something surprisingly hard to do when you’re still learning the vocabulary.\nSecond, it lets you experiment and refactor without the paralyzing fear that you’re breaking something that was already working.\nIt is a way of saying: “I may be new to this syntax, but I am not new to accountability.”\nUnmanaged complexity is a liability. Testing is the mechanism I use to protect both my time and my professional standing.\nMapping the Journey The biggest trap I’ve seen for people with senior backgrounds taking on technical learning is scope creep. We’re trained to see the whole system at once. We want to understand the neural network before we can reliably manipulate a list.\nI’ve forced myself to map the learning into three distinct layers, and to respect the sequence.\nThe first — variables, loops, functions, the basic logic of giving unambiguous instructions to a machine — is done. It sounds trivial. It wasn’t.\nThe second — Pandas, NumPy, working with datasets as sets rather than rows — is also done, and this is where the payoff starts to become concrete. This is the layer that replaces the expert spreadsheet.\nThe third — PyTorch, scikit-learn, the model-building layer — starts in three weeks.\nMost people rush to the last because it’s where the hype lives. But the models are only as strong as the plumbing beneath them.\nBy taking the first two layers seriously, I’ve tried to ensure that when I reach the third, I’m still thinking like a strategist — not just pressing buttons and hoping for outputs.\nWhat This Is Actually About The value of this transition isn’t in the Python scripts I’ll write. It’s in the shift in judgment that comes from understanding the friction of the data — how hard it actually is to clean, how fragile a pipeline can be, where the assumptions hide.\nThere’s a version of this story where I position all of this as a clever strategic move. An investment in future relevance. And it is that. But it’s also something smaller and more honest: I sat down at a blank editor, felt the discomfort of not knowing what I was doing, and kept showing up anyway.\nThat’s not the insight I expected to walk away with. But it might be the most useful one.\nThe goal isn’t mastery. It’s literacy. And literacy, it turns out, starts with being willing to look stupid for a while.\nThe Field Notebook Le Wagon Data Science - The upcoming intensive phase. ↩︎\nDatalumina Project Template - A practical starting point for structuring Python projects as systems, not scripts. ↩︎\nuv: A Modern Python Package Manager - Replacing pip and venv with a cleaner, faster unified toolchain. ↩︎\nEugene Yan on Python project setup - Why unit tests are the backbone of professional work, not an advanced topic. ↩︎\n",
+  "wordCount" : "1181",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/images/senior-python-field-notebook.png","datePublished": "2026-04-06T18:35:00+01:00",
+  "dateModified": "2026-04-06T18:35:00+01:00",
+  "author":{
+    "@type": "Person",
+    "name": "José Bagina"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/the-seniors-edge-why-my-first-line-of-python-was-a-unit-test/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Consigliere",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Data Consigliere (Alt + H)">Data Consigliere</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/start-here/" title="Start Here">
+                    <span>Start Here</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Writings">
+                    <span>Writings</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      The Senior’s Edge: Why My First Line of Python Was a Unit Test
+    </h1>
+    <div class="post-description">
+      A reflection on the &#39;Expert’s Paradox&#39;—how professional ego hinders learning, and why a senior leader chose to start with accountability over syntax.
+    </div>
+    <div class="post-meta"><span title='2026-04-06 18:35:00 +0100 BST'>April 6, 2026</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>José Bagina</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/senior-python-field-notebook.png" alt="An open field notebook with handwritten Python logic and rocket doodles resting next to a laptop showing a Traceback error and a cup of black coffee.">
+        <figcaption>The intersection of strategic vision and the humbling reality of a syntax error.</figcaption>
+</figure>
+  <div class="post-content"><p>Most career advice for senior leaders is draped in comfortable lies. We are told that our &ldquo;soft skills&rdquo; and &ldquo;domain expertise&rdquo; are our ultimate shields.</p>
+<p>I believed that, too — right up until I sat down at 9:00 AM facing a blank VS Code editor and realised that thirty years of strategic wins felt remarkably thin.</p>
+<p>In three weeks, I start an intensive Data Science bootcamp at Le Wagon <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> . A deliberate move. The kind that looks like ambition from the outside and feels, from the inside, more like controlled demolition — tearing down a professional identity built on certainty so you can rebuild it on something more durable.</p>
+<p>But the dismantling started earlier than I expected.</p>
+<hr>
+<h3 id="the-fog-doesnt-care-about-your-cv">The Fog Doesn&rsquo;t Care About Your CV<a hidden class="anchor" aria-hidden="true" href="#the-fog-doesnt-care-about-your-cv">#</a></h3>
+<p>For three decades, my value has been tied to certainty. The job — the actual job, not the title — was to walk into rooms full of ambiguity and make the fog legible for everyone else.</p>
+<blockquote>
+<p><em>Then I encountered <code>TypeError: 'NoneType' object is not subscriptable</code>, and suddenly, the fog was mine alone.</em></p>
+</blockquote>
+<p>This is what I&rsquo;ve started calling the <strong>Expert&rsquo;s Paradox</strong>: the very thing that makes you effective in a leadership role — the reflex to project competence — becomes the biggest obstacle when you sit down to learn something genuinely new.</p>
+<p>A junior developer expects to fail. For someone who has spent decades being the person who clarifies things for others, failing at a basic loop doesn&rsquo;t just sting. It feels, in some quiet, embarrassing way, like identity collapse.</p>
+<p>I spent some time fighting that feeling instead of writing code. I&rsquo;d read the error message, feel a flicker of something close to shame, and go do something productive instead — answer emails, review a deck, anything. The syntax wasn&rsquo;t the problem. The inner ego was the problem.</p>
+<p>The shift I eventually had to make was simple but uncomfortable: I had to give myself permission to be bad at this, on purpose, for a while. Not as a strategy. Just as a fact.</p>
+<hr>
+<h3 id="systems-not-scripts">Systems, Not Scripts<a hidden class="anchor" aria-hidden="true" href="#systems-not-scripts">#</a></h3>
+<p>Once I stopped performing competence and started actually learning, the first thing I noticed was the difference between what the internet teaches and what I actually needed.</p>
+<p>The internet is full of what I&rsquo;ve come to think of as <em>Survival Python</em> — the &ldquo;Hello World&rdquo; scripts, the basic loops, the snippets that live and die in a single Jupyter Notebook cell. They give you a quick hit of <em>dopamine</em>: the code ran, the chart appeared.</p>
+<p>But in any professional context, &ldquo;it works on my machine&rdquo; is a liability, not an achievement. I know that. I&rsquo;ve spent years telling other people that. So I made an early decision to approach this differently — not just learning to write code, but learning to write code the way a professional would.</p>
+<p>Borrowing project templates <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> that impose structure from the start. Using modern tooling like the <code>uv</code> package manager <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to handle environments cleanly. Asking not just &ldquo;how do I calculate this average?&rdquo; but &ldquo;how do I structure this so someone else could run it tomorrow?&rdquo;</p>
+<p>A career spent recognizing patterns makes one truth clear : technical debt isn&rsquo;t just a cost; it&rsquo;s a tax always collected with heavy interest further down the road. As it happens, learning follows the same logic. What feels like a &lsquo;hack&rsquo; or a productive shortcut today is simply the seed of tomorrow&rsquo;s frustration.</p>
+<hr>
+<h3 id="the-safety-harness">The Safety Harness<a hidden class="anchor" aria-hidden="true" href="#the-safety-harness">#</a></h3>
+<p>The most important thing I&rsquo;ve done in this preparation period isn&rsquo;t a framework or a tool. It&rsquo;s writing unit tests.</p>
+<p>Most people treat testing as an advanced topic — something you unlock once you&rsquo;ve mastered the basics. I came to think that&rsquo;s exactly backwards.</p>
+<p>What I&rsquo;m most afraid of, working in a new space, isn&rsquo;t hard work. It&rsquo;s invisible failure. A silent error in a spreadsheet that propagates through an analysis and surfaces three weeks later in a board presentation — that caution is professionally encoded in me after three decades.</p>
+<p>Drawing on practitioners like Eugene Yan <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> , I&rsquo;ve started treating unit tests not as a chore but as an insurance policy for my own logic. Writing a test before or alongside the code does two things.</p>
+<p>First, it forces you to define what success actually looks like before you start — something surprisingly hard to do when you&rsquo;re still learning the vocabulary.</p>
+<p>Second, it lets you experiment and refactor without the paralyzing fear that you&rsquo;re breaking something that was already working.</p>
+<blockquote>
+<p>It is a way of saying: <em>&ldquo;I may be new to this syntax, but I am not new to accountability.&rdquo;</em></p>
+</blockquote>
+<p>Unmanaged complexity is a liability. Testing is the mechanism I use to protect both my time and my professional standing.</p>
+<hr>
+<h3 id="mapping-the-journey">Mapping the Journey<a hidden class="anchor" aria-hidden="true" href="#mapping-the-journey">#</a></h3>
+<p>The biggest trap I&rsquo;ve seen for people with senior backgrounds taking on technical learning is
+scope creep. We&rsquo;re trained to see the whole system at once. We want to understand the neural network before we can reliably manipulate a list.</p>
+<p>I&rsquo;ve forced myself to map the learning into <em>three distinct layers</em>, and to respect the sequence.</p>
+<p>The <strong>first</strong> — variables, loops, functions, the basic logic of giving unambiguous instructions to a machine — is done. It sounds trivial. It wasn&rsquo;t.</p>
+<p>The <strong>second</strong> — Pandas, NumPy, working with datasets as sets rather than rows — is also done, and this is where the payoff starts to become concrete. This is the layer that replaces the expert spreadsheet.</p>
+<p>The <strong>third</strong> — PyTorch, scikit-learn, the model-building layer — starts in three weeks.</p>
+<p>Most people rush to the last because it&rsquo;s <em>where the hype lives</em>. But the models are only as strong as the plumbing beneath them.</p>
+<p>By taking the first two layers seriously, I&rsquo;ve tried to ensure that when I reach the third, I&rsquo;m still thinking like a strategist — not just pressing buttons and hoping for outputs.</p>
+<hr>
+<h3 id="what-this-is-actually-about">What This Is Actually About<a hidden class="anchor" aria-hidden="true" href="#what-this-is-actually-about">#</a></h3>
+<p>The value of this transition isn&rsquo;t in the Python scripts I&rsquo;ll write. It&rsquo;s in the shift in judgment that comes from understanding the friction of the data — how hard it actually is to clean, how fragile a pipeline can be, where the assumptions hide.</p>
+<p>There&rsquo;s a version of this story where I position all of this as a clever strategic move. An investment in future relevance. And it is that. But it&rsquo;s also something smaller and more honest: I sat down at a blank editor, felt the discomfort of not knowing what I was doing, and kept showing up anyway.</p>
+<p>That&rsquo;s not the insight I expected to walk away with. But it might be the most useful one.</p>
+<p>The goal isn&rsquo;t mastery. It&rsquo;s literacy. And literacy, it turns out, starts with being willing to look stupid for a while.</p>
+<hr>
+<h3 id="the-field-notebook">The Field Notebook<a hidden class="anchor" aria-hidden="true" href="#the-field-notebook">#</a></h3>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.lewagon.com/data-science-course">Le Wagon Data Science</a> - The upcoming intensive phase.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://github.com/datalumina/datalumina-project-template">Datalumina Project Template</a> - A practical starting point for structuring Python projects as systems, not scripts.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://www.youtube.com/watch?v=ygXn5nV5qFc">uv: A Modern Python Package Manager</a> - Replacing pip and venv with a cleaner, faster unified toolchain.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://eugeneyan.com/writing/setting-up-python-project-for-automation-and-collaboration/">Eugene Yan on Python project setup</a> - Why unit tests are the backbone of professional work, not an advanced topic.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/career/">Career</a></li>
+      <li><a href="http://localhost:1313/tags/data-science/">Data Science</a></li>
+      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
+      <li><a href="http://localhost:1313/tags/leadership/">Leadership</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/what-happens-when-bi-developers-become-the-users-they-once-mocked/">
+    <span class="title">Next »</span>
+    <br>
+    <span>What Happens When BI Developers Become the Users They Once Mocked</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Data Consigliere</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
