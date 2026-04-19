@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Data Consigliere</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://data-consigliere.github.io/tags/</link>
     <description>Recent content in Tags on Data Consigliere</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 16:35:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2026 08:30:00 +0100</lastBuildDate>
+    <atom:link href="https://data-consigliere.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Fundamentals</title>
-      <link>http://localhost:1313/tags/ai-fundamentals/</link>
-      <pubDate>Fri, 17 Apr 2026 16:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/ai-fundamentals/</guid>
+      <link>https://data-consigliere.github.io/tags/ai-fundamentals/</link>
+      <pubDate>Sun, 19 Apr 2026 08:30:00 +0100</pubDate>
+      <guid>https://data-consigliere.github.io/tags/ai-fundamentals/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Leadership</title>
-      <link>http://localhost:1313/tags/data-leadership/</link>
-      <pubDate>Fri, 17 Apr 2026 16:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/data-leadership/</guid>
+      <link>https://data-consigliere.github.io/tags/data-leadership/</link>
+      <pubDate>Sun, 19 Apr 2026 08:30:00 +0100</pubDate>
+      <guid>https://data-consigliere.github.io/tags/data-leadership/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Learning</title>
-      <link>http://localhost:1313/tags/machine-learning/</link>
-      <pubDate>Fri, 17 Apr 2026 16:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <link>https://data-consigliere.github.io/tags/machine-learning/</link>
+      <pubDate>Sun, 19 Apr 2026 08:30:00 +0100</pubDate>
+      <guid>https://data-consigliere.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Mathematics</title>
-      <link>http://localhost:1313/tags/mathematics/</link>
-      <pubDate>Fri, 17 Apr 2026 16:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/mathematics/</guid>
+      <link>https://data-consigliere.github.io/tags/mathematics/</link>
+      <pubDate>Sun, 19 Apr 2026 08:30:00 +0100</pubDate>
+      <guid>https://data-consigliere.github.io/tags/mathematics/</guid>
       <description></description>
     </item>
     <item>
       <title>Technical Strategy</title>
-      <link>http://localhost:1313/tags/technical-strategy/</link>
-      <pubDate>Fri, 17 Apr 2026 16:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/technical-strategy/</guid>
+      <link>https://data-consigliere.github.io/tags/technical-strategy/</link>
+      <pubDate>Sun, 19 Apr 2026 08:30:00 +0100</pubDate>
+      <guid>https://data-consigliere.github.io/tags/technical-strategy/</guid>
       <description></description>
     </item>
     <item>
       <title>Career</title>
-      <link>http://localhost:1313/tags/career/</link>
+      <link>https://data-consigliere.github.io/tags/career/</link>
       <pubDate>Mon, 06 Apr 2026 18:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/career/</guid>
+      <guid>https://data-consigliere.github.io/tags/career/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Science</title>
-      <link>http://localhost:1313/tags/data-science/</link>
+      <link>https://data-consigliere.github.io/tags/data-science/</link>
       <pubDate>Mon, 06 Apr 2026 18:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/data-science/</guid>
+      <guid>https://data-consigliere.github.io/tags/data-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Leadership</title>
-      <link>http://localhost:1313/tags/leadership/</link>
+      <link>https://data-consigliere.github.io/tags/leadership/</link>
       <pubDate>Mon, 06 Apr 2026 18:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/leadership/</guid>
+      <guid>https://data-consigliere.github.io/tags/leadership/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://data-consigliere.github.io/tags/python/</link>
       <pubDate>Mon, 06 Apr 2026 18:35:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://data-consigliere.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>https://data-consigliere.github.io/tags/ai/</link>
       <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>https://data-consigliere.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Literacy</title>
-      <link>http://localhost:1313/tags/data-literacy/</link>
+      <link>https://data-consigliere.github.io/tags/data-literacy/</link>
       <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/data-literacy/</guid>
+      <guid>https://data-consigliere.github.io/tags/data-literacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Opinion</title>
-      <link>http://localhost:1313/tags/opinion/</link>
+      <link>https://data-consigliere.github.io/tags/opinion/</link>
       <pubDate>Tue, 10 Mar 2026 11:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/opinion/</guid>
+      <guid>https://data-consigliere.github.io/tags/opinion/</guid>
       <description></description>
     </item>
     <item>
       <title>Meta</title>
-      <link>http://localhost:1313/tags/meta/</link>
+      <link>https://data-consigliere.github.io/tags/meta/</link>
       <pubDate>Sun, 22 Feb 2026 11:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/meta/</guid>
+      <guid>https://data-consigliere.github.io/tags/meta/</guid>
       <description></description>
     </item>
   </channel>
