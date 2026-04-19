@@ -1,7 +1,7 @@
 ---
 title: "Borrowed Certainty"
 description: "Returning to Calculus, Linear Algebra, and Statistics — not as a classroom exercise, but as a formal audit of the math that governs every model in production today."
-date: 2026-04-17T16:35:00+01:00
+date: 2026-04-19T08:30:00+01:00
 draft: false
 tags:
   [
