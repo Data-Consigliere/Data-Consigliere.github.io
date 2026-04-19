@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Learning in Public on Data Consigliere</title>
-    <link>http://localhost:1313/categories/learning-in-public/</link>
-    <description>Recent content in Learning in Public on Data Consigliere</description>
+    <title>Data Leadership on Data Consigliere</title>
+    <link>http://localhost:1313/tags/data-leadership/</link>
+    <description>Recent content in Data Leadership on Data Consigliere</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Apr 2026 16:35:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/learning-in-public/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/data-leadership/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Borrowed Certainty</title>
       <link>http://localhost:1313/posts/borrowed-certainty/</link>
       <pubDate>Fri, 17 Apr 2026 16:35:00 +0100</pubDate>
       <guid>http://localhost:1313/posts/borrowed-certainty/</guid>
       <description>Returning to Calculus, Linear Algebra, and Statistics — not as a classroom exercise, but as a formal audit of the math that governs every model in production today.</description>
-    </item>
-    <item>
-      <title>Don&#39;t Rent Your Voice</title>
-      <link>http://localhost:1313/posts/dont-rent-your-voice/</link>
-      <pubDate>Sun, 22 Feb 2026 11:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/dont-rent-your-voice/</guid>
-      <description>Your voice on someone else&amp;#39;s terms is just borrowed time.</description>
     </item>
   </channel>
 </rss>
